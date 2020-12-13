@@ -25,12 +25,17 @@
   </head>
 </head>
 <body>
-  <p>Alexander Ermolov</p>
+  <p><span id="myName">Alexander</span> Ermolov</p>
   <p>
     <a href="https://github.com/htdt/">github</a>
     <a href="https://twitter.com/alex_erm">twitter</a>
     <a href="https://www.linkedin.com/in/alexander-ermolov/">linkedin</a>
   </p>
   <p><a href="mailto:i@numart.ru">i@numart.ru</a></p>
+  <script type="text/javascript">
+    let myName = document.getElementById("myName");
+    window.setInterval(() => myName.innerText = "Alexander", 5000);
+    window.setTimeout(() => window.setInterval(() => myName.innerText = "Aleksandr", 5000), 2500);
+  </script>
 </body>
 </html>
